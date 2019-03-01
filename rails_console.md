@@ -25,12 +25,22 @@ Article.new(title: "this is my title", description: "This is the description").s
 Article.create(title: "this is my title", description: "This is the description")
 ```
 
+#### Retrieve Record
+
+`Article.find(2)` - find article by id
+`Article.find_by(title: '...')` - find article by column
+
 #### Edit Record
 
-`article = Article.find(2)` - find article by id
+`article = Article.find(2)`
 `article.title = "new title"` - edit title of article
 `article.save` - commit change to db
 `article = Article.find_by(title)`
+
+#### Delete Record
+
+`article = Article.find(2)`
+`article.destroy`
 
 #### Error detection
 
