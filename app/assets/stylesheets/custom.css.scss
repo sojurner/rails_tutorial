@@ -2,3 +2,45 @@ $navbar-default-bg: lightblue;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+#logo {
+  float: left;
+  font-size: 1.6em;
+  color: rgb(225, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  &:hover {
+    color: black;
+  }
+}
+
+.article-link {
+  color: black !important;
+  transition: 0.3s linear;
+  &:hover {
+    color: aliceblue !important;
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 0 0;
+}
+.description-field {
+  margin: 0;
+}
+
+.control-label {
+  font-size: 1.7rem;
+  text-align: right;
+}
+
+.form-group:nth-child(1) {
+  margin-top: 1rem !important;
+}
