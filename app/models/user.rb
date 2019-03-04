@@ -10,3 +10,5 @@ VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
             format: { with: VALID_EMAIL_REGEX }
   has_secure_password  
 end
+
+# has_secure_password - gem 'bcrypt'
