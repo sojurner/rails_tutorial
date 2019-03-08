@@ -10,4 +10,5 @@
   <%= @user.email%>
 </h4>
 
-<%= render 'articles/article', obj: @user.articles %>
+<%= link_to "edit profile", edit_user_path, class:"btn btn-primary" %> <%=
+render 'articles/article', obj: @user.articles %>
